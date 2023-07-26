@@ -1,0 +1,334 @@
+@charset "UTF-8";
+
+
+body, html {
+    width: 100%;
+    background-color:#CDEEFF;
+    padding: 0;
+    margin : 0;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+.container-fluid {
+    padding:0;
+    margin: 0;
+}
+
+/* header */ 
+.header {
+    background-color: #001F5E;
+    height : 60px;
+    line-height: 60px;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    float: left;
+}
+.logo:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    float:right;
+}
+
+.menu a {
+  margin: 15px;
+    color: white;
+    margin-right: 20px;
+}
+
+.menu a:hover{
+    color: #004CE6;
+}
+/* bannière */ 
+
+
+/* à propos */ 
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    
+    gap: 10px;
+    background-color:#CDEEFF;
+    padding-top: 2%;
+    padding-left:2%;
+    display: inline-flex;
+  }
+  
+  .container > div {
+    background-color: #001F5E;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .Actualites {
+    margin-top: 0;
+    padding-top: 3%;
+    width: 25%;
+    color : white;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+  }
+
+  .Actualites h1 {
+    margin-top: 0;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .Actualites img {
+    margin-top: 5px;
+    border : 2px solid #000000;
+    border-radius: 2px;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    width: 80%;
+  }
+  .Actualites h2{
+    padding-top: 2%;
+    margin-left: 5%;
+    font-size: 15px;
+    text-align: start;
+  }
+
+  .Actualites p{
+    padding-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 10%;
+  }
+
+  .Resultats {
+    height: 110%;
+    width: 70%;
+    padding-left: 0;
+    color : white;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-top: 1%;
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+  }
+  
+
+  .Resultats h1{
+    margin-top: 10px;
+    text-decoration: underline;
+  }
+
+  .result-container {
+    height:80%;
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;*/
+    /* align-items: center; */
+    gap: 15px;    
+    padding: 10px;
+  }
+  
+  .result-container > div {
+    margin-top: 5px;
+    
+    border-radius: 5px;
+    width: 33%;
+    height: 110%;
+  }
+
+  .jeunes h1{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .jeunes .equipes h3 {
+text-align: left;
+margin-left: 10px;
+margin-top: 10%;
+font-size: 18px;
+text-decoration: underline;
+font-weight: bold;
+letter-spacing: 1px;
+  }
+  .confrontation {
+    margin-top: 10px;
+  }
+
+  .info {
+    font-size: 15px;
+  }
+
+  .details{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+  }
+
+  .details>div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+.details .equipe1 {
+    font-size: 15px;
+    width: 39%;
+  }
+
+  .details .score{
+    display: block;
+    width: 22%;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .details .equipe2 {
+    text-align: right;
+    width: 39%;
+    justify-content: flex-end;
+    font-size: 15px;
+  }
+  .equipe1 .name {
+    margin-left:5px;
+  }
+
+  .equipe2 .name {
+    margin-right: 5px;
+  }
+
+  .equipe1 .logo img{
+    margin-left: 10px;
+    border-radius: 5px;
+  }
+  .equipe2 .logo img{
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+  .seniors h3{
+    text-align: left;
+margin-left: 10px;
+margin-top: 10%;
+font-size: 18px;
+text-decoration: underline;
+font-weight: bold;
+
+  }
+.loisirs h2{
+  margin-top: 50px;
+  text-decoration: underline ;
+}
+  .loisirs h3{
+    text-align: left;
+margin-left: 10px;
+margin-top: 10%;
+font-size: 18px;
+text-decoration: underline;
+font-weight: bold;
+
+  }
+
+.loisirs .car {
+  display: flex;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.loisirs .car .slider {
+  width: 300px;
+  height: 80%;
+  border-radius: 10px;
+  
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display:flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+.slide img{
+  height:100%;
+  width: 100%;
+}
+
+/*css pour nav manuelle */
+
+.navigation-manual{
+  position: absolute;
+  width: 15%;
+  margin-top: -40px;
+  display:flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 1.5px solid #0077B3;
+  padding:5px;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 20px;
+}
+
+.manual-btn:hover{
+background: #0077B3 ;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css pour nav manuelle */
+
+
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+background: #0077B3;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #0077B3;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #0077B3;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #0077B3;
+}
+

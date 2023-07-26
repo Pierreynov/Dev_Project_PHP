@@ -1,0 +1,17 @@
+# Important for PHP applications
+
+# If mod_rewrite.c is enabled
+<IfModule mod_rewrite.c>
+  # Enable Rewrite Engine
+  RewriteEngine On
+
+  # Redirect closing-slash requests if not a folder
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteRule ^ %1 [L,R=301]
+
+  # All request redirect to ./index.php
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^ index.php [L]
+</IfModule>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SJ Macau </title>
+
+        <!--  cs  -->
+        <link rel="stylesheet" href="/static/boutique.css">
+        <link rel="stylesheet" href="/static/profil.css">
+
+    </head>
+
+    <header class="container-fluid header">
+            
+        <a href="/" class="logo"> SJ MACAU</a>
+        <nav class="menu">
+            <!-- <a href="/equipes">Équipes</a> -->
+            <a href="/boutique">Boutique</a>
+            <?php 
+                if ($current_user) {
+                    if ($current_user["admin"]=="1"){
+                        echo "<a href='/admin'>Admin</a>";
+                    }
+                    echo "<a href='/profil'>Mon Profil</a>";
+                    echo "<a href='/logout'>Se déconnecter</a>";
+                }else{
+                echo "<a href='/login'>Se connecter</a>";
+                echo "<a href='/register'>S'inscrire</a>";	
+            }
+            ?>
+        </nav>
+    
+    
+    </header>
+    <!-- contenu du site  -->
+    <body>
+        <div class="box">
+            <div class="profil">
+                <div class="name">
+                    <h3>
+                       Pseudo :  
+                    </h3>
+                    <p>
+                        <?php
+                        $name = $current_user['name'];
+                        echo $name;
+                        ?>
+                    </p>
+                </div>
+                <div class="email">
+                    <h3>
+                        Votre email :
+                    </h3>
+                    <p>
+                        <?php
+                        $email = $current_user['email'];
+                        echo $email;
+                        ?>
+                    </p>
+                </div>
+                <div class="sold">
+                    <h3>
+                        Votre solde :
+                    </h3>
+                    <p>
+                        <?php
+                        $sold = $current_user['sold'];
+                        echo "$sold €";
+                        ?>
+                    </p>
+                </div>
+            </div>
+            <form  class="bouton" action="/ajouter_fonds" method="get">
+                <div>
+                  <label for="">Rajouter des fonds : </label>
+                  <input name="fonds" id="fonds">
+                </div>
+                <div>
+                  <button>Valider</button>
+                </div>
+              </form>
+                
+                
+            
+        </div>
+    </body>

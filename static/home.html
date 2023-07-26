@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SJ Macau </title>
+
+        <!--  cs  -->
+        <link rel="stylesheet" href="/static/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/home.css">
+
+    </head>
+
+
+    <!-- contenu du site  -->
+    <body>
+        <!-- header  -->
+        <header class="container-fluid header">
+            
+                <a href="/" class="logo"> SJ MACAU</a>
+                <nav class="menu">
+                    <!-- <a href="/equipes">Équipes</a> -->
+                    <a href="/boutique">Boutique</a>
+                    <?php 
+					if ($current_user) {
+						if ($current_user["admin"]=="1"){
+                            echo "<a href='/admin'>Admin</a>";
+                        }
+                        echo "<a href='/profil'>Mon Profil</a>";
+						echo "<a href='/logout'>Se déconnecter</a>";
+					}else{
+					echo "<a href='/login'>Se connecter</a>";
+					echo "<a href='/register'>S'inscrire</a>";	
+					}
+					?>
+                </nav>
+            
+            
+        </header>
+        <!-- fin header  -->
+
+        <!-- à propos  -->
+        <div class="container">
+            <div class="Actualites">
+                <h1>Actualités</h1>
+                <img src="./img/tournoi.jpg" id="">
+                <h2> Maintien des Seniors 1 :</h2>
+                <p>Suite à son match fou de ce week-end, notre équipe séniors s'est vue revenir au score de 3 à 3 à la 
+                    dernière action d'un match fou. Ce qui lui permet donc d'assurer la cinquième place du classement de 
+                    cette poule de Départementale 1 Club VIP et donc d'assurer mathématiquement son maintien à une journée de la 
+                    fin du championnat. Suite à cela nos séniors et l'ensemble du club ont pu remercier leurs dirigeants et supporters 
+                    pour l'ensemble de cette saison réussie.</p>
+                <h2>Tournoi U9 29/04 :</h2>
+                <p>Ce fut une grande fête au Stade du SJ Macau en ce samedi 29 Avril pour l'organisation du tournoi U9 qui a vu de très belles équipes s'affronter sur l'ensemble de la journée pour le plaisir des petits et des grands.
+                    Encore Félicitations au club de Tréllisac FC qui remporte ce tournoi et qui donc remettra son trophée en jeu l'année prochaine.
+                </p>
+
+            </div>
+
+            <!-- Résultats -->
+
+            <div class="Resultats">
+                <h1>Résultats</h1>
+
+                <!-- grille -->
+
+                <div class="result-container">
+
+                    <!-- ecole de foot -->
+                    <div class="jeunes">
+                        <h1>École de Foot</h1>
+
+                        <!-- categories -->
+                        <div class="equipes">
+                            <h3>U6 / U7 :</h3> 
+
+                            <!-- match -->
+                            <div class="confrontation">
+                                <div class="info">
+                                    Samedi 28 Avril
+                                    <br>
+                                    10h30
+                                </div>
+
+                                <!-- equipe1 -->
+                                <div class="details">
+                                    <div class="equipe1"> 
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/macau.jpg">
+                                        </div>
+                                        <div class="name">
+                                            Macau SJ
+                                        </div>
+                                    </div>
+
+                                    <!-- score -->
+                                    <div class="score"> 
+                                        2-1
+                                    </div>
+
+                                    <!-- equipe 2 -->
+                                    <div class="equipe2"> 
+                                        
+                                        <div class="name">
+                                          Moulis
+                                        </div>
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/moulis.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div class="equipe1"> 
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/macau.jpg">
+                                        </div>
+                                        <div class="name">
+                                            Macau SJ
+                                        </div>
+                                    </div>
+
+                                    <!-- score -->
+                                    <div class="score"> 
+                                        0-4
+                                    </div>
+
+                                    <!-- equipe 2 -->
+                                    <div class="equipe2"> 
+                                        
+                                        <div class="name">
+                                          Arsac
+                                        </div>
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/arsac.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fin du match -->
+                            </div>
+
+                            <h3>U8 / U9 :</h3>
+                            <div class="confrontation">
+                                <div class="info">
+                                    Samedi 28 Avril
+                                    <br>
+                                    10h30
+                                </div>
+
+                                <!-- equipe1 -->
+                                <div class="details">
+                                    <div class="equipe1"> 
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/macau.jpg">
+                                        </div>
+                                        <div class="name">
+                                            Macau SJ
+                                        </div>
+                                    </div>
+
+                                    <!-- score -->
+                                    <div class="score"> 
+                                        2-1
+                                    </div>
+
+                                    <!-- equipe 2 -->
+                                    <div class="equipe2"> 
+                                        
+                                        <div class="name">
+                                          Moulis
+                                        </div>
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/moulis.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div class="equipe1"> 
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/ludon.jpg">
+                                        </div>
+                                        <div class="name">
+                                            Ludon
+                                        </div>
+                                    </div>
+
+                                    <!-- score -->
+                                    <div class="score"> 
+                                        0-1
+                                    </div>
+
+                                    <!-- equipe 2 -->
+                                    <div class="equipe2"> 
+                                        
+                                        <div class="name">
+                                          Macau
+                                        </div>
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/macau.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fin du match -->
+                            </div>
+                            <h3>U10 / U11 :</h3>
+                            <div class="confrontation">
+                                <div class="info">
+                                    Samedi 28 Avril
+                                    <br>
+                                    10h30
+                                </div>
+
+                                <!-- equipe1 -->
+                                <div class="details">
+                                    <div class="equipe1"> 
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/macau.jpg">
+                                        </div>
+                                        <div class="name">
+                                            Macau SJ
+                                        </div>
+                                    </div>
+
+                                    <!-- score -->
+                                    <div class="score"> 
+                                        3-1
+                                    </div>
+
+                                    <!-- equipe 2 -->
+                                    <div class="equipe2"> 
+                                        
+                                        <div class="name">
+                                          Ambares
+                                        </div>
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/ambares.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <div class="equipe1"> 
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/macau.jpg">
+                                        </div>
+                                        <div class="name">
+                                            Macau SJ
+                                        </div>
+                                    </div>
+
+                                    <!-- score -->
+                                    <div class="score"> 
+                                        1-1
+                                    </div>
+
+                                    <!-- equipe 2 -->
+                                    <div class="equipe2"> 
+                                        
+                                        <div class="name">
+                                          Arsac
+                                        </div>
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/arsac.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fin du match -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seniors">
+                        <h1>Séniors</h1>
+
+                        <!-- categories -->
+                        <div class="equipes">
+                            <h3>Equipe 1 :</h3> 
+
+                            <!-- match -->
+                            <div class="confrontation">
+                                <div class="info">
+                                    Dimanche 07 Mai
+                                    <br>
+                                    13h00
+                                    <br>
+                                    Cestas
+                                </div>
+
+                                <!-- equipe1 -->
+                                <div class="details">
+                                    <div class="equipe1"> 
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/macau.jpg">
+                                        </div>
+                                        <div class="name">
+                                            Macau SJ
+                                        </div>
+                                    </div>
+
+                                    <!-- score -->
+                                    <div class="score"> 
+                                        3-3
+                                    </div>
+
+                                    <!-- equipe 2 -->
+                                    <div class="equipe2"> 
+                                        
+                                        <div class="name">
+                                          Taillan 
+                                        </div>
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/taillan.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- fin du match -->
+                            </div>
+
+                            <h3>Equipe 2 :</h3>
+                            <div class="confrontation">
+                                <div class="info">
+                                    Dimanche 14 Mai
+                                    <br>
+                                    13h00
+                                    <br>
+                                    Macau
+                                </div>
+
+                                <!-- equipe1 -->
+                                <div class="details">
+                                    <div class="equipe1"> 
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/macau.jpg">
+                                        </div>
+                                        <div class="name">
+                                            Macau SJ
+                                        </div>
+                                    </div>
+
+                                    <!-- score -->
+                                    <div class="score"> 
+                                        1-0
+                                    </div>
+
+                                    <!-- equipe 2 -->
+                                    <div class="equipe2"> 
+                                        
+                                        <div class="name">
+                                          Martignas
+                                        </div>
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/martignas.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <!-- fin du match -->
+                            </div>
+                        </div>
+                        
+                        <img style="margin-top:20px; width:80%; height:43%; border-radius: 2px;box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);" src="/img/equipe.jpg" alt="equipe 1 séniors">
+                    </div>
+                    <div class="loisirs">
+                        <h1>Loisirs</h1>
+
+                        <!-- categories -->
+                        <div class="equipes">
+                            <h3>Equipe 1 :</h3> 
+
+                            <!-- match -->
+                            <div class="confrontation">
+                                <div class="info">
+                                    Vendredi 27 Avril
+                                    <br>
+                                    20h00
+                                    <br>
+                                    Macau
+                                </div>
+
+                                <!-- equipe1 -->
+                                <div class="details">
+                                    <div class="equipe1"> 
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/macau.jpg">
+                                        </div>
+                                        <div class="name">
+                                            Macau SJ
+                                        </div>
+                                    </div>
+
+                                    <!-- score -->
+                                    <div class="score"> 
+                                        3-1
+                                    </div>
+
+                                    <!-- equipe 2 -->
+                                    <div class="equipe2"> 
+                                        
+                                        <div class="name">
+                                          Lormont US
+                                        </div>
+                                        <div class="logo">
+                                            <img width="30" height="30" src="/img/lormont.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- fin du match -->
+                            </div>
+
+                            
+                               
+                                <!-- fin du match -->
+                        </div>
+                        <h2>Album Photos</h2>
+                        <div class="car"> 
+                            
+                        <!-- carousel -->
+                            <div class="slider">
+                                <div class="slides">
+                                    <input type="radio" name="radio-btn" id="radio1">
+                                    <input type="radio" name="radio-btn" id="radio2">
+                                    <input type="radio" name="radio-btn" id="radio3">
+                                    <input type="radio" name="radio-btn" id="radio4">
+
+                                    <div class="slide first">
+                                        <img src="/img/1.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="/img/2.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="/img/a.jpg" alt="" style="width: 50%; height: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="/img/b.jpg" alt="" style="width: 50%; height: 100%; object-fit: cover;">
+                                    </div>
+
+                                    <div class="navigation-auto">
+                                        <div class="auto-btn1"></div>
+                                        <div class="auto-btn2"></div>
+                                        <div class="auto-btn3"></div>
+                                        <div class="auto-btn4"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <script type="text/javascript">
+                                var counter = 1;
+                                setInterval(function(){
+                                    document.getElementById('radio' + counter).checked = true;
+                                    counter ++;
+                                    if (counter > 4){
+                                        counter = 1;
+                                    }
+                                }, 5000);
+                            </script>
+                        </div>
+                    </div>  
+                    
+                </div>
+            </div>
+
+            
+            
+          </div>
+        <!-- fin à propos  -->
+
+        <!-- footer  -->
+        <footer class="container-fluid footer">
+
+        </footer>
+
+    </body>
+
+
+</html>

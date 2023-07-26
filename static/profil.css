@@ -1,0 +1,86 @@
+.box{
+    max-width: 75%;
+    height: 200px;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: white;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    /* text-align: center; */
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
+    
+}
+.name {
+    display: flex;
+    align-items: center;
+    
+}
+.name h3 {
+    font-style: italic;
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 25px;
+}
+.name p {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+    
+}
+.email h3 {
+    font-style: italic;
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 25px;
+}
+.email p {
+    font-size: 25px;
+    margin-left: 10px;
+    
+}
+
+.sold {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+    
+}
+.sold h3 {
+    font-style: italic;
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 25px;
+}
+.sold p {
+    font-size: 25px;
+    margin-left: 10px;
+    
+}
+.bouton {
+    float: right;
+    display: flex;
+    
+}
+ .bouton button{
+    background-color: #001F5E;
+    color: white;
+    margin-left: 10px;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+
+ .bouton button:hover{
+    background-color: white;
+    color:  #001F5E;
+ }

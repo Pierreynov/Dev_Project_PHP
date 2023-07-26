@@ -1,0 +1,21 @@
+<html>
+<head>
+    <link href="/static/login.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <?php
+    if (isset($error)) {
+      echo $error;
+    }
+  ?>
+  <form action="/login" method="post">
+    <label for="username">Pseudo :</label>
+    <input type="text" id="identifiant" name="identifiant">
+    <br>
+    <label for="password">Mot de passe :</label>
+    <input type="password" id="password" name="password">
+    <br><br>
+    <input type="submit" value="Login">
+  </form>
+</body>
